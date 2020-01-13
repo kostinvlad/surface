@@ -26,13 +26,14 @@ h1 {
 
 @media (max-width: 640px) {
 
-
-
-
+.top-wrapper {
+  width: 280px;
+  display: flex;
+}
 
 .top {
 
-  display: flex;
+
   height: 100vh;
   background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/football_767.jpg);
   -webkit-background-size: cover;
