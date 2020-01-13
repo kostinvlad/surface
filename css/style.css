@@ -24,7 +24,7 @@ h1 {
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 640px) and (aspect-ratio: 2/3) {
 
 .top-wrapper {
   width: 280px;
@@ -39,7 +39,7 @@ h1 {
   height: 100vh;
   background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/football_767.jpg);
   -webkit-background-size: cover;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
