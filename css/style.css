@@ -39,9 +39,9 @@ h1 {
   height: 100vh;
   background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/football_767.jpg);
   -webkit-background-size: cover;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   position: relative;
 }
 
