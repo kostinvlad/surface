@@ -19,5 +19,37 @@ body {
 }
 
 h1 {
-  color: red;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 640px) {
+
+
+
+
+.top {
+  background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/football_767.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.top::after {
+  content: "";
+background-color: #0f0d0e;
+background-size: cover;
+z-index: 2;
+opacity: 0.5;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+
+
 }
