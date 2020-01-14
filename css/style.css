@@ -29,7 +29,14 @@ h1, h2, h3, h4, h5, h6, h7 {
   font-weight: normal;
 }
 
-@media (max-width: 640px) {
+
+
+@media (max-width: 640px) and (orientation: portrait) {
+
+.logo-title {
+  z-index: 3;
+}
+
 
   .top {
 
@@ -115,5 +122,31 @@ h1, h2, h3, h4, h5, h6, h7 {
   margin-top: 5vw;
 }
 
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .top {
+
+
+    background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/football_767.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+  .top::after {
+    content: "";
+    background-color: #010f54;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
 }
