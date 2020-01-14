@@ -35,7 +35,7 @@ html {
 @media (max-width: 640px) and (orientation: portrait) {
 
 .page {
-  width: 87.2vw;
+  width: 100vw;
 }
 
 .logo-title {
