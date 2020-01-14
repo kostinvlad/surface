@@ -23,15 +23,20 @@ h1 {
   text-transform: uppercase;
 }
 
-
-
-h1, h2, h3, h4, h5, h6, h7 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  font-size: medium;
 }
 
+html {
 
+}
 
 @media (max-width: 640px) and (orientation: portrait) {
+
+.page {
+  width: 87.2vw;
+}
 
 .logo-title {
   z-index: 3;
@@ -39,7 +44,6 @@ h1, h2, h3, h4, h5, h6, h7 {
 
 
   .top {
-
 
     background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/football_767.jpg);
     -webkit-background-size: cover;
@@ -65,7 +69,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 
 
 .top-wrapper {
-  width: 87.2vw;
+
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -113,7 +117,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 .buttons-item {
   display: flex;
   background-color: #5e42b0;
-  flex-grow: 1;
+
   border-radius: 35px;
   height: 11vw;
 }
@@ -124,7 +128,9 @@ h1, h2, h3, h4, h5, h6, h7 {
 
 }
 
-@media (max-width: 640px) and (orientation: landscape) {
+
+
+/* @media (max-width: 640px) and (orientation: landscape) {
   .top {
 
 
@@ -132,7 +138,7 @@ h1, h2, h3, h4, h5, h6, h7 {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     position: relative;
   }
 
@@ -153,17 +159,17 @@ h1, h2, h3, h4, h5, h6, h7 {
 
 
   .top-wrapper {
-    width: 87.2vw;
+    width: 80vw;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 84px;
-    padding-top: 42px;
-    justify-content: space-between;
+    padding-bottom: 12vh;
+
+    align-content: space-between;
   }
 
   .header-title {
@@ -175,40 +181,41 @@ h1, h2, h3, h4, h5, h6, h7 {
     font-family: OpenSans-Bold;
     font-weight: 700;
     align-content: center;
-    font-size: 9vw;
+    font-size: 9.3vh;
 
   }
 
   .title-part1 {
-    margin-right: auto;
   }
 
   .title-part2 {
-  
-    justify-content: center;
   }
 
   .buttons {
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
     /* flex-direction: column; */
-    width: 100%;
+    width: 35vw;
 
     z-index: 3;
   }
 
 
   .buttons-item {
+    width: 16vw;
     display: flex;
+    flex-wrap: nowrap;
     background-color: #5e42b0;
     flex-grow: 1;
     border-radius: 35px;
-    height: 11vw;
+    height: 8vh;
   }
 
   .buttons-item:last-child {
-    margin-top: 5vw;
+    margin-left: 3vw;
   }
 
 
-}
+} */
