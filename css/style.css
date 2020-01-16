@@ -12,210 +12,160 @@
   font-style: normal;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Opensans-Regular, OpenSans-Bold;
-}
-
-h1 {
-  color: #fff;
-  text-transform: uppercase;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-size: medium;
 }
 
-html {
-
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Opensans-Regular, OpenSans-Bold; */
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
 
-.page {
-  width: 100vw;
+  .page {
+    max-width: 100vw;
+
 }
 
-.logo-title {
-  z-index: 3;
-}
-
-
-  .top {
-
-    background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/football_767.jpg);
+  header {
+    background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/football_320px.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-  }
-
-  .top::after {
-    content: "";
-    background-color: #010f54;
-    background-size: cover;
-    z-index: 2;
-    opacity: 0.7;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-
-
-.top-wrapper {
-
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 84px;
-  padding-top: 42px;
-  justify-content: space-between;
-}
-
-.header-title {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  position: relative;
-  z-index: 3;
-  font-family: OpenSans-Bold;
-  font-weight: 700;
-  align-content: center;
-  font-size: 9vw;
-
-}
-
-.title-part1 {
-  margin-right: auto;
-}
-
-.title-part2 {
-
-  justify-content: center;
-}
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  /* flex-direction: column; */
-  width: 100%;
-
-  z-index: 3;
-}
-
-
-.buttons-item {
-  display: flex;
-  background-color: #5e42b0;
-
-  border-radius: 35px;
-  height: 11vw;
-}
-
-.buttons-item:last-child {
-  margin-top: 5vw;
-}
-
-}
-
-
-
-/* @media (max-width: 640px) and (orientation: landscape) {
-  .top {
-
-
-    background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/football_640_landscape.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-  }
-
-  .top::after {
-    content: "";
-    background-color: #010f54;
-    background-size: cover;
-    z-index: 2;
-    opacity: 0.7;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-
-
-
-  .top-wrapper {
-    width: 80vw;
     height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 12vh;
-
-    align-content: space-between;
   }
 
-  .header-title {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  /* Main */
+
+.part-header {
+  font-family: OpenSans-Bold;
+  font-size: 45px;
+  font-weight: 900;
+  padding-bottom: 241px;
+  padding-top: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  line-height: 60px;
+  }
+
+.part-connection {
+  background-color: #fafafa;
+  font-family: OpenSans-Regular;
+  padding-top: 82px;
+  padding-bottom: 54px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+}
+.header-part {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 25px;
+}
+
+.set-h3 {
+  padding-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.number-h3 {
+  font-family: OpenSans-Bold;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.underline-h3 {
+  width: 17px;
+  height: 4px;
+  border-radius: 1.5px;
+  background-color: #5e42b0;
+}
+
+.part-collaboration .underline-h3 {
+  width: 17px;
+  height: 4px;
+  border-radius: 1.5px;
+  background-color: #5e42b0;
+}
+
+.header-h3 {
+  font-family: OpenSans-Bold;
+  font-size: 23px;
+  color: #c1c1c1;
+  text-transform: uppercase;
+}
+
+.part-paragraph {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+
+}
+
+.part-collaboration {
+  background-color: #f5f4f9;
+  font-family: OpenSans-Regular;
+  padding-top: 60px;
+  padding-bottom: 54px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.part-growth {
+  color: #ffffff;
+  background-color: #5e42b0;
+  font-family: OpenSans-Regular;
+  padding-top: 61px;
+  padding-bottom: 54px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.part-growth .number-h3 {
+  color: #000;
+}
+
+.part-growth .underline-h3 {
+  background-color: #fff;
+}
+
+.players .part-growth {
+  color: #ffffff;
+  background-color: #090c35;
+  font-family: OpenSans-Regular;
+  padding-top: 61px;
+  padding-bottom: 54px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.players .part-growth .underline-h3 {
+  background-color: #ffffff;
+}
+
+.players .part-growth .number-h3 {
+  color: #644bab;
+}
+
+  footer {
+    background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/footer_320px.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
-    z-index: 3;
-    font-family: OpenSans-Bold;
-    font-weight: 700;
-    align-content: center;
-    font-size: 9.3vh;
-
+    height: 100vh;
   }
-
-  .title-part1 {
-  }
-
-  .title-part2 {
-  }
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    /* flex-direction: column; */
-    width: 35vw;
-
-    z-index: 3;
-  }
-
-
-  .buttons-item {
-    width: 16vw;
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #5e42b0;
-    flex-grow: 1;
-    border-radius: 35px;
-    height: 8vh;
-  }
-
-  .buttons-item:last-child {
-    margin-left: 3vw;
-  }
-
-
-} */
+}
