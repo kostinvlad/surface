@@ -27,14 +27,11 @@ a {
 }
 
 .surface-text-logo {
+  display: block;
   width: 133px;
   height: 36px;
 
-@media (max-width: 640px) and (orientation: portrait) {
-
-  .page {
-    max-width: 100vw;
-}
+@media (max-width: 640px) {
 
   .header {
     background-image: url(https://raw.githubusercontent.com/kostinvlad/surface/master/images/football_767.jpg);
