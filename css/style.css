@@ -129,87 +129,9 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
+    justify-content: center;
   }
 
-  .header-title-part-two {
-    margin-top: 28px;
-  }
-
-  .surface-text-logo {
-    margin-bottom: 137px;
-  }
-
-  .button:first-child {
-    margin-left: 0;
-    margin-bottom: 14px;
-  }
-
-  .button-icon {
-    width: 22px;
-    height: 22px;
-    margin-right: 8px;
-  }
-
-  .header-container {
-    height: 81vh;
-    display: flex;
-    padding: 30px 20px 84px;
-    flex-direction: column;
-    z-index: 3;
-    position: relative;
-  }
-
-  /* Main */
-  .part-header {
-    font-family: OpenSans-Bold;
-    font-size: 45px;
-    font-weight: 900;
-    padding-bottom: 241px;
-    padding-top: 23px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #e7e7e7;
-    text-transform: uppercase;
-    line-height: 60px;
-  }
-
-  .part-connection {
-    background-color: #fafafa;
-    font-family: OpenSans-Regular;
-    padding-top: 82px;
-    padding-bottom: 54px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .athlets-header {
-    font-size: 50px;
-    font-family: OpenSans-Bold;
-    padding: 24px 0px 242px 20px;
-    color: #e7e7e7;
-  }
-
-  .players-header {
-    font-size: 50px;
-    font-family: OpenSans-Bold;
-    padding: 24px 0px 242px 20px;
-    color: #e7e7e7;
-  }
-
-  .header-part {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 25px;
-    align-items: center;
-  }
-
-
-  .number-h3 {
-    font-family: OpenSans-Bold;
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 10px;
-}
 
   .number-h3::after {
     content: "";
@@ -308,7 +230,7 @@ a {
     background-color: #5e42b0;
     position: absolute;
     z-index: 5;
-    top: 300px;
+    top: 350px;
     left: 20px;
     bottom: 0;
     right: 0;
