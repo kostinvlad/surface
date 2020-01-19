@@ -41,7 +41,6 @@ a {
 .header-title {
   color: #ffffff;
   font-family: OpenSans-Bold;
-
 }
 
 .button {
@@ -72,6 +71,14 @@ a {
 
 .buttons span:last-child {
   font-family: OpenSans-Bold;
+}
+
+.advice-h3 {
+  font-family: OpenSans-Bold;
+}
+
+.advice-p {
+  font-size: 16px;
 }
 
 .footer::after, .header::after {
@@ -110,8 +117,6 @@ a {
     height: 100vh;
   }
 
-
-
   .button {
     width: 100%;
     height: 35px;
@@ -127,7 +132,7 @@ a {
   }
 
   .header-title-part-two {
-   margin-top: 28px;
+    margin-top: 28px;
   }
 
   .surface-text-logo {
@@ -150,7 +155,6 @@ a {
     display: flex;
     padding: 30px 20px 84px;
     flex-direction: column;
-
     z-index: 3;
     position: relative;
   }
@@ -178,28 +182,56 @@ a {
     padding-right: 20px;
   }
 
+  .athlets-header {
+    font-size: 50px;
+    font-family: OpenSans-Bold;
+    padding: 24px 0px 242px 20px;
+    color: #e7e7e7;
+  }
+
+  .players-header {
+    font-size: 50px;
+    font-family: OpenSans-Bold;
+    padding: 24px 0px 242px 20px;
+    color: #e7e7e7;
+  }
+
   .header-part {
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: 25px;
+    align-items: center;
   }
 
-  .set-h3 {
-    padding-right: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 
   .number-h3 {
     font-family: OpenSans-Bold;
     font-size: 15px;
     font-weight: bold;
+    margin-right: 10px;
+}
+
+  .number-h3::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #8f7bc8;
+    border-radius: 5px;
+
+  }
+
+  .number-h3::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #8f7bc8;
+    border-radius: 5px;
+
   }
 
   .underline-h3 {
     width: 17px;
-    height: 4px;
+    height: 3px;
     border-radius: 1.5px;
     background-color: #5e42b0;
   }
@@ -269,9 +301,60 @@ a {
     color: #644bab;
   }
 
+  .number-box {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0;
+    position: absolute;
+    z-index: 5;
+    top: 300px;
+    left: 20px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .advice-item {
+    position: relative;
+  }
+
+  .number-box-number {
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: OpenSans-bold;
+    font-size: 14px;
+
+  }
+
+  .number-box-number::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #8f7bc8;
+    border-radius: 5px;
+
+
+    }
+
+  .advice-flex {
+    padding-top: 34px;
+    padding-bottom: 79px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .advice-h3 {
+    font-size: 28px;
+    color: #e7e7e7;
+    margin-bottom: 23px;
+  }
+
   .advice-image {
     max-width: 100%;
     height: auto;
+    position: relative;
   }
 
   footer {
@@ -281,25 +364,57 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    height: 100vh;
+    height: 100%;
   }
 
   .footer-container {
     display: flex;
     flex-direction: column;
+    align-content: space-between;
     padding: 98px 20px 8px;
     z-index: 3;
     position: relative;
   }
 
   .top-logo-box {
+    justify-content: center;
     display: block;
     width: 72px;
     min-width: 72px;
     height: 72px;
     border-radius: 16px;
     padding: 11px 8px;
-    margin-right: 0;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 59px;
   }
+
+  .footer-title {
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 23px;
+    margin-bottom: 78px;
+    footer-botton:
+  }
+
+  .footer-span-title {
+    font-family: OpenSans-Bold;
+    font-size: 32px;
+    color: #ffffff;
+  }
+
+  .footer-span-title-low {
+    font-size: 14px;
+    font-family: OpenSans-Regular;
+    color: #9b8ec1;
+
+  }
+
+  .footer .surface-text-logo {
+    margin-top: 88px;
+    margin-bottom: 8px;
+  }
+
 }
