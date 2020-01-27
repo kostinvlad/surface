@@ -1,3 +1,29 @@
+/* fonts */
+@font-face {
+ font-family: 'Open Sans';
+ src: url('../fonts/OpenSans-Regular.eot');
+ src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+  url('../fonts/OpenSans-Regular.woff2') format('woff2');
+ font-weight: 400;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'Open Sans';
+ src: url('../fonts/OpenSans-Bold.eot');
+ src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Bold.woff') format('woff'),
+  url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+  url('../fonts/OpenSans-Bold.woff2') format('woff2');
+ font-weight: 700;
+ font-style: normal;
+}
+
+
+
+
 @font-face {
   font-family: OpenSans-Regular;
   src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
@@ -20,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: Opensans-Regular, OpenSans-Bold;
 }
 
@@ -29,6 +55,17 @@ a {
   color: #ffffff;
   text-transform: uppercase;
 }
+
+
+  .header-title {
+    font-size: 1.75rem;
+    line-height: 120%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    justify-content: center;
+  }
 
 .surface-text-logo {
   display: block;
@@ -55,12 +92,12 @@ a {
   text-decoration: none;
 }
 
+
 .button-text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 .buttons {
   margin-top: auto;
 }
@@ -81,7 +118,7 @@ a {
   font-size: 16px;
 }
 
-.footer::after, .header::after {
+.footer::after , .header::after {
   content: "";
   background-color: #0a0e34;
   background-size: cover;
@@ -117,38 +154,55 @@ a {
     height: 100vh;
   }
 
+  .header-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .part-connection {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .part-collaboration {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .part-growth {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .athlets-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .button {
     width: 100%;
     height: 35px;
   }
 
-  .header-title {
-    font-size: 1.75rem;
-    line-height: 120%;
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 80px;
-    justify-content: center;
-  }
+.athlets-container {
+  height: 305px;
+}
+
+.header-container {
+  position: relative;
+  z-index: 3
+}
+
+
 
 
   .number-h3::after {
     content: "";
     display: block;
+    width: 8px;
     height: 5px;
     background-color: #8f7bc8;
     border-radius: 5px;
-
-  }
-
-  .number-h3::after {
-    content: "";
-    display: block;
-    height: 5px;
-    background-color: #8f7bc8;
-    border-radius: 5px;
-
   }
 
   .underline-h3 {
@@ -176,6 +230,12 @@ a {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.7px;
+  }
+
+  .athlets-header {
+    font-family: OpenSans-Bold;
+    font-size: 50px;
+    color: #e7e7e7;
   }
 
   .part-collaboration {
@@ -229,7 +289,7 @@ a {
     height: 70px;
     background-color: #5e42b0;
     position: absolute;
-    z-index: 5;
+    z-index: 3;
     top: 400px;
     left: 20px;
     bottom: 0;
@@ -247,7 +307,6 @@ a {
     margin: auto;
     font-family: OpenSans-bold;
     font-size: 14px;
-
   }
 
   .number-box-number::after {
@@ -256,9 +315,7 @@ a {
     height: 5px;
     background-color: #8f7bc8;
     border-radius: 5px;
-
-
-    }
+  }
 
   .advice-flex {
     padding-top: 34px;
@@ -331,12 +388,10 @@ a {
     font-size: 14px;
     font-family: OpenSans-Regular;
     color: #9b8ec1;
-
   }
 
   .footer .surface-text-logo {
     margin-top: 88px;
     margin-bottom: 8px;
   }
-
 }
