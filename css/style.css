@@ -293,8 +293,13 @@ body {
  max-width: 50%;
  max-height: 730px;
  overflow: hidden;
+ object-fit: cover;
  display: flex;
  justify-content: center;
+}
+
+.feature-img {
+  object-fit: cover;
 }
 
 .section.cta .feature-content {
