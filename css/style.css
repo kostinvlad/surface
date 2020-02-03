@@ -298,9 +298,9 @@ body {
  justify-content: center;
 }
 
-.feature-img {
+/* .feature-img {
   object-fit: cover;
-}
+} */
 
 .section.cta .feature-content {
  padding: 100px 120px 100px 10%;
@@ -364,12 +364,18 @@ body {
 }
 
 .app-icon {
+ max-width: 130px;
  min-width: 130px;
  height: 136px;
  background-image: linear-gradient(#7751db, #5e3db3, #50329c);
  border-radius: 30px;
  padding: 20px 12px;
  margin-right: 38px;
+
+}
+
+.svg-app-icon {
+  display: block;
 }
 
 .footer-subtitle {
